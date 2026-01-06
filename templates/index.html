@@ -2,6 +2,9 @@
 <html lang="en">
     <head>
         <meta http-equiv="content-type" content="test/html; charset=utf-8">
+	{% if config.extra.favicon %}
+	<link rel="icon" href="{{get_url(path=config.extra.favicon)}}" sizes="32x32">
+	{% endif %}
         <title>{{ config.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -11,19 +14,9 @@
     </head>
     <body>
         {% set root_section = get_section(path="_index.md") %}
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="{{ config.base_url }}">{{ config.title }}</a>
-                    <button class="navbar-toggler"
-                            type="button"
-                            data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav"
-                            aria-controls="navbarNav"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             {% for sec in root_section.subsections %}
@@ -40,13 +33,18 @@
                                 </li>
                             {% endfor %}
                         </ul>
+
                     </div>
+			{% if config.extra.icon %}
+			<div class="self-justify-end">
+			    <img src="{{get_url(path=config.extra.icon)}}" style="height: 3em !important;" />
+			</div>
+			{% endif %}
                 </div>
-            </nav>
         </nav>
         <div class="container mt-4">
             <div class="row">
-                <nav class="col-3">
+                <nav class="col-3 vh-75">
                     {% block nav %}
                     {% endblock nav %}
                 </nav>
