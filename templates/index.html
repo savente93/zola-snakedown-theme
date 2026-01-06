@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="test/html; charset=utf-8">
+        <title>{{ config.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+              rel="stylesheet"
+              integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+              crossorigin="anonymous">
+    </head>
+    <body>
+        {% set root_section = get_section(path="_index.md") %}
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{{ config.base_url }}">{{ config.title }}</a>
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            {% for sec in root_section.subsections %}
+                                {% set sub_sec = get_section(path=sec) %}
+                                {% if section %}
+                                    {% set is_current_section = sub_sec.components | first  == section.components | first %}
+                                {% elif page %}
+                                    {% set is_current_section = sub_sec.components | first  == page.components | first %}
+                                {% endif %}
+                                <li class="nav-item">
+                                    <a class="nav-link {% if is_current_section %}active{% endif %}"
+                                       aria-current="page"
+                                       href="{{ sub_sec.permalink }}">{{ sub_sec.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </nav>
+        <div class="container mt-4">
+            <div class="row">
+                <nav class="col-3">
+                    {% block nav %}
+                    {% endblock nav %}
+                </nav>
+                <article class="col-8 border-start">
+                    <section>
+                        <header>
+                            {% block header %}
+                                <h1>{{ section.title }}</h1>
+                            {% endblock header %}
+                        </header>
+                        {% block content %}
+                            <ul>
+                                {% for page in section.pages %}
+                                    <li>
+                                        <a href="{{ page.permalink }}">{{ page.title }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% endblock content %}
+                    </section>
+                </article>
+            </div>
+        </div>
+        <footer class="text-center border-top m-4 p-4">
+            {% block footer %}
+                Made with Snakedown, Zola, and a touch of madness
+            {% endblock footer %}
+        </footer>
+    </body>
+</html>
