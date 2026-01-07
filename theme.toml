@@ -1,5 +1,5 @@
 name = "Snakedown"
-description = "A classic blog theme"
+description = "A theme for hosting python documentation and API references"
 # An optional tags to allow quick search
 tags = ["docs", "python", "api"]
 license = "MIT"
