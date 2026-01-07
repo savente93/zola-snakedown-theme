@@ -14,6 +14,5 @@ Returns:
     float: Sum of a and b.
 
 Example:
-
     >>> add(2.5, 4.5)
     7.0
