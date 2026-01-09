@@ -1,6 +1,6 @@
 # The URL the site will be built for
 base_url = "https://example.com"
-title = "Snakedown Demo"
+title    = "Snakedown Demo"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -15,4 +15,4 @@ highlight_code = true
 
 [extra]
 favicon = "snek.ico"
-icon = "snek.webp"
+icon    = "snek.webp"

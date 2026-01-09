@@ -1,8 +1,8 @@
-name = "Snakedown"
+name        = "Snakedown"
 description = "A theme for hosting python documentation and API references"
 # An optional tags to allow quick search
-tags = ["docs", "python", "api"]
-license = "MIT"
+tags     = ["docs", "python", "api"]
+license  = "MIT"
 homepage = "https://github.com/savente93/zola-snakedown-theme"
 # The minimum version of Zola required
 min_version = "0.21.0"
@@ -15,12 +15,12 @@ min_version = "0.21.0"
 
 # The theme author info: you!
 [author]
-name = "Sam Vente"
+name     = "Sam Vente"
 homepage = "https://slowcoder.org"
 
 # If this is porting a theme from another static site engine, provide
 # the info of the original author here
 [original]
-author =  "PyData Community"
+author   = "PyData Community"
 homepage = "https://pydata-sphinx-theme.readthedocs.io/en/stable/"
-repo = "https://github.com/pydata/pydata-sphinx-theme"
+repo     = "https://github.com/pydata/pydata-sphinx-theme"
