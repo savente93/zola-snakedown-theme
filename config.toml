@@ -8,6 +8,15 @@ compile_sass = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+[markdown.highlighting]
+error_on_missing_language = false
+
+# Whether to use inline hex colours (`inline`) or CSS classes (`class`) 
+style = "inline"
+
+theme = "light-plus"
 [extra]
 favicon = "snek.ico"
 icon    = "snek.webp"
+
+katex = true
