@@ -3,7 +3,7 @@ description = "A theme for hosting python documentation and API references"
 # An optional tags to allow quick search
 tags     = ["docs", "python", "api"]
 license  = "MIT"
-homepage = "https://github.com/savente93/zola-snakedown-theme"
+homepage = "https://github.com/aslowwriter/zola-snakedown-theme"
 # The minimum version of Zola required
 min_version = "0.21.0"
 

@@ -2,7 +2,7 @@
 
 ![Snakedown logo: a snake with a business tie and a bolwer hat next to the word "Snakedown" in an old school type writer font](static/snek-banner.webp)
 
-A Batteries included [Zola](https://www.getzola.org) theme to use with [Snakedown](https://github.com/savente93/snakedown) for Python documentation.
+A Batteries included [Zola](https://www.getzola.org) theme to use with [Snakedown](https://github.com/aslowwriter/snakedown) for Python documentation.
 
 Snakedown is a tool to extract signature and docstrings from your Python project and automatically generate an API documentation so that you can use it in your favourite static site generator (in this case Zola) to host your documentation. 
 
@@ -24,7 +24,7 @@ As Snakedown and this theme are both still quite young, features will continue t
 First clone this repo into your themes from the root of your site: 
 
 ```bash
-$ git clone https://github.com/savente93/zola-snakedown-theme.git themes/snakedown
+$ git clone https://github.com/aslowwriter/zola-snakedown-theme.git themes/snakedown
 
 ```
 
@@ -47,7 +47,7 @@ TBC
 
 ## Contributing
 
-I'd very much appreciate feedback, feature requests and bug reports. Please report those [in the issue tracker](https://github.com/savente93/zola-snakedown-theme/issues). If you are reporting a bug please include a screenshot of the issue for reference (if possible and appropriate). PRs are also welcome though I'd advise you to reach out first and discuss your ideas to avoid wasted work.
+I'd very much appreciate feedback, feature requests and bug reports. Please report those [in the issue tracker](https://github.com/aslowwriter/zola-snakedown-theme/issues). If you are reporting a bug please include a screenshot of the issue for reference (if possible and appropriate). PRs are also welcome though I'd advise you to reach out first and discuss your ideas to avoid wasted work.
 
 
 ## Special Thanks
