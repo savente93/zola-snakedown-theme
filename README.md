@@ -15,7 +15,7 @@ As Snakedown and this theme are both still quite young, features will continue t
 - Navbar at the top for main sections of your docs/site, with active marker for current page section
 - No JS
 - Responsive design with Bootstrap CSS
-- Side bar for naviagating pages in current section
+- Side bar for navigating pages in current section
 - Configurable favicon and logo in the Navbar options 
 - Defaults designed to work out of the box, but be customizable
 
