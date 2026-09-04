@@ -3,6 +3,7 @@ title = "test_pkg.sub1.sub2.one.is_even"
 +++
 
 is_even(num: int) -> bool
+[source](test_pkg/sub1/sub2/one.py#L11-L28)
 
 Check if a number is even.
 

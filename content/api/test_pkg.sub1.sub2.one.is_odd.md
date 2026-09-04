@@ -3,6 +3,7 @@ title = "test_pkg.sub1.sub2.one.is_odd"
 +++
 
 is_odd(num: int) -> bool
+[source](test_pkg/sub1/sub2/one.py#L31-L45)
 
 Check if a number is odd. It is a descendant function from the
 [test_pkg.sub1.sub2](@/api/test_pkg.sub1.sub2.md) module

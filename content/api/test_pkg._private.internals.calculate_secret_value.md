@@ -3,6 +3,7 @@ title = "test_pkg._private.internals.calculate_secret_value"
 +++
 
 calculate_secret_value(x: int, y: int) -> int
+[source](test_pkg/_private/internals.py#L11-L26)
 
 Calculate a secret value by multiplying inputs and adding a constant.
 

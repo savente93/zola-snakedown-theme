@@ -2,6 +2,8 @@
 title = "test_pkg.bar"
 +++
 
+[source](test_pkg/bar.py)
+
 bar.py
 
 Example module with a function and a class.

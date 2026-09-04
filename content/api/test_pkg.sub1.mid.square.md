@@ -3,6 +3,7 @@ title = "test_pkg.sub1.mid.square"
 +++
 
 square(x: int) -> int
+[source](test_pkg/sub1/mid.py#L8-L22)
 
 Return the square of a number.
 
